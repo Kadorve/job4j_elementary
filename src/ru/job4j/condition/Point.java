@@ -9,6 +9,6 @@ public class Point {
 
     public static void main(String[] args) {
         double result = Point.distance(1, 3, 2, 5);
-        System.out.println("result (1, 3) to (2, 4) " + result);
+        System.out.println("result (1, 3) to (2, 5) " + result);
     }
 }
