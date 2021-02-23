@@ -6,7 +6,7 @@ public class ChessBoardSlon {
         int deltax = Math.abs(x2 - x1);
         int deltay = Math.abs(y2 - y1);
         if (deltax == deltay) {
-            rsl = Math.abs(x2 - x1);
+            rsl = deltax;
             rsl = (rsl != 0) ? Math.abs(y2 - y1) : rsl;
         }
         return rsl;
