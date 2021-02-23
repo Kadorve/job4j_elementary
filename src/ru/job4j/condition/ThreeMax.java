@@ -5,10 +5,9 @@ public class ThreeMax {
         int result = first;
         if (second > third && second > first) {
             result = second;
-        } else {
-            if (third >= second && third > first) {
+        }
+        if (third >= second && third > first) {
                 result = third;
-            }
         }
         return result;
     }
