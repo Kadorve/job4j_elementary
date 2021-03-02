@@ -10,10 +10,8 @@ public class Min {
     public static int findMin(int[] array) {
         int min = array[0];
         for (int index = 1; index < array.length; index++) {
-            if (array[0] > array[index]) {
+            if (min > array[index]) {
                 min = array[index];
-                array[index] = array[0];
-                array[0] = min;
             }
         }
         return  min;
