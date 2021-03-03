@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class MatrixCheckTest {
 
     @Test
-    public void monoHasMonoHorizontal() {
+    public void whenHasMonoHorizontal() {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'},
@@ -16,5 +16,15 @@ public class MatrixCheckTest {
         };
         boolean result = MatrixCheck.monoHorizontal(input, 1);
         assertThat(result, is(true));
+    }
+
+    @Test
+    public void whenHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        boolean result = MatrixCheck.monoVertical(input, 2);
     }
 }
