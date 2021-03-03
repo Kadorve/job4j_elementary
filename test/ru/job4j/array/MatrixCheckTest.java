@@ -67,7 +67,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenDataMonoByTrueThenFalse() {
+    public void whenDataHMonoByTrueThenTrue() {
         char[][] input = {
                 {' ', ' ', ' ', ' ', ' '},
                 {' ', ' ', ' ', ' ', ' '},
